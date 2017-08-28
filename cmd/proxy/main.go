@@ -2,17 +2,16 @@ package main
 
 import (
 	"flag"
-	"github.com/tguangch/gtools/cncf"
-	_ "github.com/tguangch/gtools/output"
-	_ "github.com/tguangch/gtools/metric"
-	"github.com/tguangch/gtools/collect"
+	"github.com/robertang/collector/cncf"
+	_ "github.com/robertang/collector/output"
+	_ "github.com/robertang/collector/metric"
+	"github.com/robertang/collector/collect"
 	"fmt"
 	"encoding/json"
 )
 
 var (
-	//configFile = flag.String("c", "/etc/stats/collect.yml", "location of config file")
-	configFile = flag.String("c", "D:/tguangch/go-gtools/src/github.com/tguangch/gtools/cmd/collectd/redis.yml", "location of config file")
+	configFile = flag.String("conf", "./src/github.com/robertang/collector/cmd/proxy/redis.yml", "location of config file")
 )
 
 func main(){
